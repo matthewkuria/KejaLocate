@@ -77,6 +77,35 @@ a{
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
+.btn{
+	color: white;
+	background-color: green;
+}
+.featured{
+	margin-top: 10vh;
+	display: flex;
+	flex-wrap:wrap; 
+	grid-gap: 20px;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+}
+.item{
+	height: auto;
+	width: auto;
+	padding: 0.5em;
+	text-align: center;
+	border: 1px solid blue;
+}
+.item .btn{
+	color: #F8F8F8;
+	float: right;
+	font-size: 15px;
+	padding: 0px 10px;
+}
+.item .btn:hover{
+	background-color: red;
+}
 @keyframes colorchane{
     0%{
         color: white;

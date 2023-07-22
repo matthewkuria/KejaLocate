@@ -19,6 +19,9 @@
 	opacity: 1;
 	color: white;
 }
+.hero p{
+	font-size: 28px;
+}
 .container h3{
     color: white;
 	font-size: 64px;
@@ -97,44 +100,7 @@ a{
         color: red;
     }
 }
-@media(max-width:576px){
-	  .hamburger{
-        display: block;
-    }
-    .hamburger.active .bar:nth-child(2){
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1){
-        transform:translateY(8px) rotate(45deg);
-    }
-     .hamburger.active .bar:nth-child(3){
-        transform:translateY(-8px) rotate(-45deg);
-    }
-    .nav-menu{
-        position: fixed;
-        left: -100%;
-        top:70px;
-        column-gap: 0;
-        flex-direction: column;
-        background-color: #262626;
-        width: 100%;
-        text-align: center;
-        transition: 0.3s;
-    }
-    .nav-item{
-        margin: 16px 0;
-    }
-    .nav-menu.active{
-        left:0;
-    }
-    .nav-branding{
-        font-size: 1.2rem;
-    }
-	.container h3{
-    color: white;
-	font-size: 32px;
-}
-}
+
 @media(max-width:768px){
     .hamburger{
         display: block;
@@ -168,8 +134,58 @@ a{
     .nav-branding{
         font-size: 1.2rem;
     }
+	.hero{
+		height: 80vh;
+	}
+	.hero p{
+	font-size: 22px;
+}
 	.container h3{
     color: white;
 	font-size: 48px;
+}
+}
+@media(max-width:576px){
+	  .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+     .hamburger.active .bar:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top:70px;
+        column-gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left:0;
+    }
+    .nav-branding{
+        font-size: 1.2rem;
+    }
+	.hero{
+		height: 70vh;
+	}
+	.hero p{
+	font-size: 16px;
+}
+	.container h3{
+    color: white;
+	font-size: 28px;
 }
 }

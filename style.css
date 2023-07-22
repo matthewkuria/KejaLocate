@@ -135,7 +135,7 @@ a{
         font-size: 1.2rem;
     }
 	.hero{
-		height: 80vh;
+		height: 90vh;
 	}
 	.hero p{
 	font-size: 22px;
@@ -179,10 +179,11 @@ a{
         font-size: 1.2rem;
     }
 	.hero{
-		height: 70vh;
+		height: 80vh;
 	}
 	.hero p{
-	font-size: 16px;
+	font-size: 14px;
+		padding-top: 20px;
 }
 	.container h3{
     color: white;

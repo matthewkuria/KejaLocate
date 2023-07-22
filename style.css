@@ -7,17 +7,28 @@
     width: auto;
     height: 100vh;
     display: flex;
-    justify-content: center;
+	flex-direction: column;
+    justify-content:center;
     align-items: center;
-    background-color: black;
+    background-color: white;
+}
+.hero{
+	background-image: url(images/rental.jpeg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 1;
+	color: white;
 }
 .container h3{
     color: white;
+	font-size: 64px;
 }
 header{
-    background-color: #262626;
+    background-color: green;
 }
-
+header img{
+	background-color: transparent;
+}
 li{
     list-style: none;
 }
@@ -63,7 +74,7 @@ a{
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
-@keyframes colorchange{
+@keyframes colorchane{
     0%{
         color: white;
     }
@@ -85,6 +96,44 @@ a{
         100%{
         color: red;
     }
+}
+@media(max-width:576px){
+	  .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform:translateY(8px) rotate(45deg);
+    }
+     .hamburger.active .bar:nth-child(3){
+        transform:translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top:70px;
+        column-gap: 0;
+        flex-direction: column;
+        background-color: #262626;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.active{
+        left:0;
+    }
+    .nav-branding{
+        font-size: 1.2rem;
+    }
+	.container h3{
+    color: white;
+	font-size: 32px;
+}
 }
 @media(max-width:768px){
     .hamburger{
@@ -119,4 +168,8 @@ a{
     .nav-branding{
         font-size: 1.2rem;
     }
+	.container h3{
+    color: white;
+	font-size: 48px;
+}
 }

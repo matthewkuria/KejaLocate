@@ -85,10 +85,12 @@ a{
 }
 input[type=text],select,textarea{
 	width: 100%;
-	padding: 1px;
-	border: 1px solid #ccc;
+	padding: 2px;
+	border: 2px solid #ccc;
 	border-radius: 4px;
 	resize: vertical;
+	background-color:#0D6EFD;
+	color: white;
 }
 input[type=location]{
 	width: 100%;

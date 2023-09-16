@@ -26,10 +26,14 @@
     color: white;
 	font-size: 64px;
 }
-.search-container{
-	background-color: white;
-	z-index: 1;
+/*
+.tab-content{
+	
+	display: flex;
+	justify-content: center;
+	align-content: center;
 }
+*/
 header{
     background-color: green;
 }

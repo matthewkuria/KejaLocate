@@ -26,6 +26,10 @@
     color: white;
 	font-size: 64px;
 }
+.search-container{
+	background-color: white;
+	z-index: 1;
+}
 header{
     background-color: green;
 }

@@ -83,6 +83,34 @@ a{
     transition: all 0.3s ease-in-out;
     background-color: white;
 }
+input[type=text],select,textarea{
+	width: 100%;
+	padding: 1px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;
+}
+input[type=location]{
+	width: 100%;
+	resize: vertical;
+}
+label{
+	padding: 12px 12px 12px 0;
+	display: inline-block;
+}
+input[type=submit]{
+	background-color: #0D6EFD;
+	color: white;
+	margin: 2%;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+input[type=submit]:hover{
+	opacity: 0.8;
+}
 .btn{
 	color: white;
 	background-color: green;

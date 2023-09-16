@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-.container{
+.container-fluid{
     width: auto;
     height: 100vh;
     display: flex;
@@ -26,14 +26,12 @@
     color: white;
 	font-size: 64px;
 }
-/*
 .tab-content{
 	
 	display: flex;
 	justify-content: center;
 	align-content: center;
 }
-*/
 header{
     background-color: green;
 }

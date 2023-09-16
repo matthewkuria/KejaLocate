@@ -64,8 +64,11 @@
 	<div class=" container tab-content">
 		 
 			  <!--ComboBox-->
-		<form>
+		<form action="/action_page.php">
+	  <div class="row">
+		  <div class="col-25">
 		  <label for="houses">Categories</label>
+		   </div>
 			<select name="categories" id="categories">
 			  <optgroup label="Commercial Property">
 				<option value="offices">offices</option>
@@ -89,7 +92,11 @@
 					  <input type="search" id="search" name="search" placeholder="Enter your location,town">
 				      <label for="search">Price</label>
 					  <input type="search" id="search" name="search" placeholder="Max.Price">
-					  <input type="submit" value="Search">
+			</div>
+		  		<div class="row">
+					 <input type="submit" value="Search">
+		        </div>
+					 
 						  
 		      </form>
 			

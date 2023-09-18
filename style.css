@@ -22,11 +22,7 @@
 .hero p{
 	font-size: 28px;
 }
-.heroArrow{
-		margin-bottom: -2vh;
-		padding: 2em;
-		color: red !important;
-	}
+
 .container h3{
     color: white;
 	font-size: 64px;

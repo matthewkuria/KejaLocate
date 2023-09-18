@@ -47,6 +47,15 @@
             </div>
             </nav>
         </header>
+		
+
+        <!--Hero or home page-->
+        <div class="container-fluid hero">
+            <h3>Welcome to <br>KejaLocate House hunting Services</h3>
+			<p>Your Property Searching  Partner<br>
+			Want a Keja?Well,KejaLocate it!</p>
+		<a href="#one" ><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f00505}</style><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
+        </div>
 		<!--Search Bar container-->
 		<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
   <li class="nav-item" role="presentation">
@@ -63,7 +72,7 @@
   <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
 	<div class=" container tab-content">
 		 
-			  <!--ComboBox-->
+			  <!--ComboBox for the for Sale-->
 		<form name="contact" method="post" data-netlify="true">
 	  <div class="row">
 		  <div class="col-25">
@@ -71,6 +80,7 @@
 		   </div>
 			<div class="col-75">
 				<select name="categories" id="categories">
+					<option value="category">CATEGORY</option>
 			  <optgroup label="Commercial Property">
 				<option value="offices">offices</option>
 				<option value="WareHouses">WareHouses</option>
@@ -80,40 +90,28 @@
 				<option value="TownHouses">TownHouses</option>
 				<option value="Villas">Villas</option>
 				<option value="2-BedRooms">2-BedRooms</option>
-				<option value="Singles">Singles</option>
-				<option value="Bedsitters">Bedsitters</option>
+				
 			  </optgroup>
 			</select>
 		  </div>
 		  </div>
 			 
 	  <!--Search Boxes -->
-	  
 			
-		
-					 <div class="col-25">
-						  <label for="search">Location</label>
-						</div>
-					<div class="col-75">			
-					  <input type="search" id="search" name="search" placeholder="Enter your location,town">
-			        </div>
-			        <div class="col-25">
-				      <label for="search">Price</label>
-			        </div>
-					  <input type="search" id="search" name="search" placeholder="Max.Price">
-		  			  <input type="submit" value="Search">
-			
-		  		
-					
-		       
-					 
-						  
-		      </form>
-			
-			
-	
-		
-	  </div>
+
+		 <div class="col-25">
+			  <label for="search">Location</label>
+			</div>
+		<div class="col-75">			
+		  <input type="search" id="search" name="search" placeholder="Enter your location,town">
+		</div>
+		<div class="col-25">
+		  <label for="search">Price</label>
+		</div>
+		  <input type="search" id="search" name="search" placeholder="Max.Price">
+		  <input type="submit" value="Search">
+    </form>
+ </div>
 	  <!--End of Tab Content-->
 
 	</div>
@@ -122,7 +120,8 @@
 		  <!--ComboBox-->
 		<form>
 		  <label for="houses">Categories</label>
-			<select name="cars" id="cars">
+			<select name="houses" id="houses">
+			   <option value="category">CATEGORY</option>
 			  <optgroup label="Commercial Property">
 				<option value="offices">offices</option>
 				<option value="WareHouses">WareHouses</option>
@@ -131,9 +130,9 @@
 			  <optgroup label="Houses">
 				<option value="TownHouses">TownHouses</option>
 				<option value="Villas">Villas</option>
-				<option value="2-BedRooms">2-BedRooms</option>
 				<option value="Singles">Singles</option>
 				<option value="Bedsitters">Bedsitters</option>
+				<option value="Hostels">Hostels</option>
 			  </optgroup>
 			</select>
 	  <!--Search Boxes -->
@@ -157,14 +156,6 @@
 	  </form>
 	</div>
 </div>
-
-        <!--Hero or home page-->
-        <div class="container-fluid hero">
-            <h3>Welcome to <br>KejaLocate House hunting Services</h3>
-			<p>Your Property Searching  Partner<br>
-			Want a Keja?Well,KejaLocate it!</p>
-		<a href="#one" ><svg xmlns="http://www.w3.org/2000/svg" height="3em" viewBox="0 0 384 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f00505}</style><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"/></svg></a>
-        </div>
 <!--		Next container for featured houses-->
 		<h4 style="text-align: center">FEATURED PROPERTIES</h4>
 		<div class="container featured" id="one">

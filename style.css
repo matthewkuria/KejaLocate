@@ -37,6 +37,10 @@
 .tab-content form{
 	width: 100%;
 	display: inline;
+	
+}
+.search-area{
+	background-color: gainsboro;
 }
 
 header{

@@ -1,5 +1,8 @@
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".nav-menu");
+const date = document.querySelector(".date");
+
+date.innerHTML = new Date().getFullYear();
 
 hamburger.addEventListener("click",()=>{
     hamburger.classList.toggle("active");

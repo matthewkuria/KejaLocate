@@ -40,6 +40,8 @@
 
 header{
     background-color: green;
+	font-weight: 800;
+	
 }
 header img{
 	background-color: transparent;
@@ -74,7 +76,7 @@ a{
     transition: 0.7s ease;
 }
 .nav-link:hover{
-    color: dodgerblue;
+    color: white !important;
 }
 .hamburger{
     display: none;

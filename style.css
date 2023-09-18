@@ -31,7 +31,13 @@
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	margin-top: -3%;
 }
+.tab-content form{
+	width: 100%;
+	display: inline;
+}
+
 header{
     background-color: green;
 }

@@ -51,7 +51,7 @@ li{
     list-style: none;
 }
 
-a{
+.navbar a{
     color: white;
     text-decoration: none;
 }
@@ -77,7 +77,7 @@ a{
     transition: 0.7s ease;
 }
 .nav-link:hover{
-    color: white !important;
+    color: ;
 }
 .hamburger{
     display: none;

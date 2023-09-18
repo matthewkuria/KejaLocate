@@ -156,6 +156,20 @@ input[type=submit]:hover{
 .featured img:hover{
 	box-shadow: 10px 20px 30px green;
 }
+.footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: baseline;
+	align-content: center;
+	position: relative;
+	margin-top: 4vh;
+	padding: 3em;
+	background-color: green;
+	height: auto;
+	color: white;
+	
+}
 @keyframes colorchane{
     0%{
         color: white;
@@ -267,5 +281,14 @@ input[type=submit]:hover{
 	.container h3{
     color: white;
 	font-size: 28px;
+}
+	.footer{
+	display: flex;
+	flex-direction: column;
+   align-items: center;
+	
+	
+
+	
 }
 }

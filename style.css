@@ -22,6 +22,11 @@
 .hero p{
 	font-size: 28px;
 }
+.heroArrow{
+		margin-bottom: -2vh;
+		padding: 2em;
+		color: red !important;
+	}
 .container h3{
     color: white;
 	font-size: 64px;
@@ -170,6 +175,7 @@ input[type=submit]:hover{
 	color: white;
 	
 }
+
 @keyframes colorchane{
     0%{
         color: white;
@@ -233,7 +239,8 @@ input[type=submit]:hover{
 	.hero p{
 	font-size: 22px;
 }
-	.container h3{
+
+.container h3{
     color: white;
 	font-size: 48px;
 }

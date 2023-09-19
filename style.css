@@ -183,7 +183,11 @@ input[type=submit]:hover{
 	height: 10vh;
 	background-color: green;
 }
-
+.copyright a{
+	color: red;
+	text-decoration: none;
+	font-weight: 600;
+}
 @keyframes colorchane{
     0%{
         color: white;

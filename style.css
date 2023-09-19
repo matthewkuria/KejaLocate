@@ -175,6 +175,9 @@ input[type=submit]:hover{
 	color: white;
 	
 }
+.footer a{
+	color: white;
+}
 .copyright{
     color: white;
 	height: 10vh;

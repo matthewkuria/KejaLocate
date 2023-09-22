@@ -139,7 +139,7 @@ input[type=submit]:hover{
 	justify-content: space-around;
 	align-items: baseline;
 }
-.item{
+.card{
 	height: auto;
 	width: auto;
 	padding: 0.5em;

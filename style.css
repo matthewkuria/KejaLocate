@@ -133,9 +133,9 @@ input[type=submit]:hover{
 .featured{
 	margin-top: 10vh;
 	display: flex;
-	flex-wrap:wrap; 
-	grid-gap: 20px;
 	flex-direction: row;
+	flex-wrap:wrap; 
+	grid-gap: 10px;	
 	justify-content: space-around;
 	align-items: baseline;
 }
@@ -156,10 +156,10 @@ input[type=submit]:hover{
 	background-color: red;
 }
 .featured img{
-	
+	border-radius: 15px;
 }
 .featured img:hover{
-	transform: scale(1.005);
+	transform: scale(1.05);
 }
 .footer{
 	display: flex;

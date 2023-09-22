@@ -94,7 +94,7 @@ window.addEventListener('DOMContentLoaded', function(){
 	let displayMenu = houseMenu.map(function(item){
 //		console.log(item);
 		return `<div class="card" style="width: 18rem;">
-				<a href="images/rentalf1.jpg">
+				<a href=${item.img}>
 			  <img src=${item.img} class="photo" alt="rentals KejaLocate" width="250px" height="270px">
 				</a>
 				<!--Like/Hearty Icon-->

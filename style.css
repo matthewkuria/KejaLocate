@@ -144,7 +144,10 @@ input[type=submit]:hover{
 	width: auto;
 	padding: 0.5em;
 	text-align: center;
-	border: 1px solid blue;
+	border: none !important;
+	/* Apply an inset shadow */
+    box-shadow:  2px -1px 9px 1px gainsboro;
+
 }
 .item .btn{
 	color: #F8F8F8;

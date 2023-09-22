@@ -159,7 +159,7 @@ input[type=submit]:hover{
 	
 }
 .featured img:hover{
-	box-shadow: 10px 20px 30px green;
+	transform: scale(1.005);
 }
 .footer{
 	display: flex;

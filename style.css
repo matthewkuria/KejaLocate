@@ -97,13 +97,12 @@ li{
     background-color: white;
 }
 input[type=text],select,textarea{
-	width: 100%;
+	width: 20%;
 	padding: 2px;
 	border: 2px solid #ccc;
 	border-radius: 4px;
-	resize: vertical;
-	background-color:#0D6EFD;
-	color: white;
+	resize: vertical;	
+	
 }
 input[type=location]{
 	width: 100%;
@@ -261,10 +260,17 @@ input[type=submit]:hover{
 	.hero p{
 	font-size: 22px;
 }
-
 .container h3{
     color: white;
 	font-size: 48px;
+}
+	input[type=text],select,textarea{
+	width: 30%;
+	padding: 2px;
+	border: 2px solid #ccc;
+	border-radius: 4px;
+	resize: vertical;	
+	
 }
 }
 @media(max-width:576px){

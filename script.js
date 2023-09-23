@@ -91,7 +91,12 @@ const houseMenu =[
 const featured = document.querySelector('.featured');
 
 window.addEventListener('DOMContentLoaded', function(){
-	let displayMenu = houseMenu.map(function(item){
+	displayHouseItems(houseMenu);
+	
+});
+
+function displayHouseItems(houseMenuItems){
+	let displayMenu = houseMenuItems.map(function(item){
 //		console.log(item);
 		return `<div class="card" style="width: 18rem;">
 				<a href=${item.img}>
@@ -114,9 +119,40 @@ window.addEventListener('DOMContentLoaded', function(){
 	});
 	displayMenu = displayMenu.join("");
 	featured.innerHTML = displayMenu;
-});
+}
+
+//Get the selected House Function
+// Function to filter results based on selected housing type
+function filterResults() {
+  // Get the ComboBox element
+  var comboBox = document.getElementById("housingType");
+
+  // Get the selected option
+  var selectedOption = comboBox.options[comboBox.selectedIndex].value;
+
+  // Get the results list
+  var resultsList = document.getElementById("resultsList").getElementsByTagName("li");
+
+  // Loop through each result item and hide/show based on the selected option
+  for (var i = 0; i < resultsList.length; i++) {
+    var resultItem = resultsList[i];
+
+    if (selectedOption === "all" || resultItem.textContent.toLowerCase().includes(selectedOption)) {
+      resultItem.style.display = "block"; // Show the item
+    } else {
+      resultItem.style.display = "none"; // Hide the item
+    }
+  }
+}
+
+// Add an event listener to the ComboBox to trigger filtering
+document.getElementById("housingType").addEventListener("change", filterResults);
+
+// Initially, call the filterResults function to show all results
+filterResults();
 
 
+//End of get the selected house function
 
 hamburger.addEventListener("click",()=>{
     hamburger.classList.toggle("active");

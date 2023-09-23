@@ -175,11 +175,12 @@ const houseMenu =[
   var comboBox = document.getElementById("housingType");
   var houseContainer = document.getElementById('housecontainer');
   var houseCategories = document.getElementsByClassName("card");
+  var resultsCount = document.getElementById('resultsCount');
 
   comboBox.addEventListener("change", function(){
 	  //Get Selected category
 	  var selectedCategory = comboBox.value;
-
+	  	let count = 0;
   // Loop through all cards
   for (var i = 0; i < houseCategories.length; i++) {
     var houseCategory = houseCategories[i];
@@ -187,11 +188,15 @@ const houseMenu =[
     // If the selected category is "all" or the data-category attribute matches the selected category, display the image; otherwise, hide it
     if (selectedCategory === "all" || houseCategory.getAttribute("data-category") === selectedCategory) {
       houseCategory.style.display = "block";
+		count++;
+		
     } else {
       houseCategory.style.display = "none";
+		
     }
+	  resultsCount.textContent =`${count} Available`;
   }
-	  
+	
   });	
 
 

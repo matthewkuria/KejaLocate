@@ -87,18 +87,47 @@ const houseMenu =[
 	},
 ];
 
+//Get the selected House Function
+// Function to filter results based on selected housing type
+
+  // Get the ComboBox element
+  var comboBox = document.getElementById("housingType");
+  var houseContainer = document.getElementById('housecontainer');
+  var houseCategories = document.getElementsByClassName("card");
+
+  comboBox.addEventListener("change", function(){
+	  //Get Selected category
+	  var selectedCategory = comboBox.value;
+
+  // Loop through all cards
+  for (var i = 0; i < houseCategories.length; i++) {
+    var houseCategory = houseCategories[i];
+
+    // If the selected category is "all" or the data-category attribute matches the selected category, display the image; otherwise, hide it
+    if (selectedCategory === "all" || houseCategory.getAttribute("data-category") === selectedCategory) {
+      houseCategory.style.display = "block";
+    } else {
+      houseCategory.style.display = "none";
+    }
+  }
+	  
+  });	
+
+
+
+//End of get the selected house function
 
 const featured = document.querySelector('.featured');
 
 window.addEventListener('DOMContentLoaded', function(){
 	displayHouseItems(houseMenu);
-	
+	filterResults();
 });
 
 function displayHouseItems(houseMenuItems){
 	let displayMenu = houseMenuItems.map(function(item){
 //		console.log(item);
-		return `<div class="card" style="width: 18rem;">
+		return `<div class="card" data-category=${item.category} style="width: 18rem;">
 				<a href=${item.img}>
 			  <img src=${item.img} class="photo" alt="rentals KejaLocate" width="250px" height="270px">
 				</a>
@@ -121,38 +150,7 @@ function displayHouseItems(houseMenuItems){
 	featured.innerHTML = displayMenu;
 }
 
-//Get the selected House Function
-// Function to filter results based on selected housing type
-function filterResults() {
-  // Get the ComboBox element
-  var comboBox = document.getElementById("housingType");
 
-  // Get the selected option
-  var selectedOption = comboBox.options[comboBox.selectedIndex].value;
-
-  // Get the results list
-  var resultsList = document.getElementById("resultsList").getElementsByTagName("li");
-
-  // Loop through each result item and hide/show based on the selected option
-  for (var i = 0; i < resultsList.length; i++) {
-    var resultItem = resultsList[i];
-
-    if (selectedOption === "all" || resultItem.textContent.toLowerCase().includes(selectedOption)) {
-      resultItem.style.display = "block"; // Show the item
-    } else {
-      resultItem.style.display = "none"; // Hide the item
-    }
-  }
-}
-
-// Add an event listener to the ComboBox to trigger filtering
-document.getElementById("housingType").addEventListener("change", filterResults);
-
-// Initially, call the filterResults function to show all results
-filterResults();
-
-
-//End of get the selected house function
 
 hamburger.addEventListener("click",()=>{
     hamburger.classList.toggle("active");

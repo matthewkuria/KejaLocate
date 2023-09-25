@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+	scroll-behavior: smooth;
+}
 .container-fluid{
     width: auto;
     height: 100vh;
@@ -25,6 +28,8 @@
     border-radius: 50%;
     cursor: pointer;
     padding: 8px 10px;
+	
+   
 }
 
 .scroll-to-top:hover {
@@ -63,9 +68,11 @@
 }
 
 header{
+	
     background-color: green;
 	font-weight: 800;
-	
+	width: 100vw;
+	z-index: 1;
 }
 header img{
 	background-color: transparent;
@@ -80,6 +87,7 @@ li{
 }
 
 .navbar{
+	
     min-height: 70px;
     display: flex;
     justify-content: space-between;

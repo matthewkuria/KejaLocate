@@ -247,3 +247,23 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click",(
     hamburger.classList.remove("active");
     navMenu.classList.remove("active");
 }))
+
+// Scroll to the top 
+const scrollToTopButton = document.getElementById("scrollToTopBtn");
+
+// Show the button when the user scrolls down 20px from the top
+window.onscroll = () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollToTopButton.style.display = "block";
+    } else {
+        scrollToTopButton.style.display = "none";
+    }
+};
+
+// Scroll to the top when the button is clicked
+scrollToTopButton.addEventListener("click", () => {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+});
+
+// End of Scroll to the top 

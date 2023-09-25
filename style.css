@@ -12,6 +12,25 @@
     align-items: center;
     background-color: white;
 }
+/* scroll to the top */
+.scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 8px 10px;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+/* End of scroll to the top */
 .hero{
 	background-image: url(images/rental.jpeg);
 	background-repeat: no-repeat;

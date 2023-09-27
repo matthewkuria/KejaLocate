@@ -81,18 +81,29 @@ li{
     list-style: none;
 }
 
-.navbar a{
+#navbar a{
     color: white;
     text-decoration: none;
 }
 
-.navbar{
-	
-    min-height: 70px;
+#navbar{
+     min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 24px;
+	
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+	background-color: green;
+	font-weight: 800;
+	width: 100vw;
+	color: green;
 }
 .nav-menu{
     display: flex;

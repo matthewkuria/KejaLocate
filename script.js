@@ -268,21 +268,3 @@ scrollToTopButton.addEventListener("click", () => {
 
 // End of Scroll to the top 
 
-// Get references to the navbar and its initial position
-const navbar = document.getElementById('navbar');
-const navbarOffsetTop = navbar.offsetTop;
-
-// Function to add or remove the 'fixed' class based on scroll position
-function toggleFixedNavbar() {
-    if (window.pageYOffset >= navbarOffsetTop) {
-        navbar.classList.add('fi');
-    } else {
-        navbar.classList.remove('fixed');
-    }
-}
-
-// Attach the toggleFixedNavbar function to the window's scroll event
-window.addEventListener('scroll', toggleFixedNavbar);
-
-// Initial call to set the navbar's initial state
-toggleFixedNavbar();

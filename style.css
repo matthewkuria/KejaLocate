@@ -81,13 +81,13 @@ li{
     list-style: none;
 }
 
-#navbar a{
+.navbar a{
     color: white;
     text-decoration: none;
 }
 
-#navbar{
-     min-height: 70px;
+.navbar{
+    min-height: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;

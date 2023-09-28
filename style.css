@@ -99,10 +99,9 @@ li{
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 100;
+    z-index: 1;
 	background-color: green;
 	font-weight: 800;
-	width: 100vw;
 	color: green;
 }
 .nav-menu{
@@ -235,7 +234,7 @@ input[type=submit]:hover{
 	text-decoration: none;
 	font-weight: 600;
 }
-@keyframes colorchane{
+@keyframes colorchange{
     0%{
         color: white;
     }
@@ -294,6 +293,7 @@ input[type=submit]:hover{
     }
 	.hero{
 		height: 90vh;
+		 
 	}
 	.hero p{
 	font-size: 22px;

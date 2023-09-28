@@ -275,7 +275,7 @@ const navbarOffsetTop = navbar.offsetTop;
 // Function to add or remove the 'fixed' class based on scroll position
 function toggleFixedNavbar() {
     if (window.pageYOffset >= navbarOffsetTop) {
-        navbar.classList.add('fixed');
+        navbar.classList.add('fi');
     } else {
         navbar.classList.remove('fixed');
     }

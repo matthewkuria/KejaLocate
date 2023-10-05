@@ -370,8 +370,8 @@ input[type=submit]:hover{
 	font-size: 28px;
 }
 .map{
-    width: 200px;
-    height: auto;
+    width: 300px;
+    height:300px;
 }
 	.footer{
 	display: flex;

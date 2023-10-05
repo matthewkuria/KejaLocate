@@ -369,11 +369,11 @@ input[type=submit]:hover{
     color: white;
 	font-size: 28px;
 }
-.map{
-    margin-left: 0vw;
+.map iframe{
+    margin-left: 5vw;
     padding: 10px;
-    width: 320px;
-    height:300px;
+    width: 400px;
+    height:180px;
 }
 	.footer{
 	display: flex;

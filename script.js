@@ -267,4 +267,61 @@ scrollToTopButton.addEventListener("click", () => {
 });
 
 // End of Scroll to the top 
+// script.js
+const reviewsContainer = document.getElementById("reviews-container");
 
+// Sample review data (you can replace this with real data)
+const reviews = [
+    {
+        name: "John Doe",
+        rating: 4,
+        comment: "Great product! Highly recommended."
+    },
+    {
+        name: "Jane Smith",
+        rating: 5,
+        comment: "Excellent service and fast delivery."
+    },
+    {
+        name: "Bob Johnson",
+        rating: 3,
+        comment: "Product quality could be better."
+    }
+];
+
+// Function to display reviews
+function displayReviews() {
+    reviewsContainer.innerHTML = ""; // Clear existing reviews
+    reviews.forEach(review => {
+        const reviewElement = document.createElement("div");
+        reviewElement.classList.add("review");
+        reviewElement.innerHTML = `
+            <h3>${review.name}</h3>
+            <p>Rating: ${review.rating}/5</p>
+            <p>${review.comment}</p>
+        `;
+        reviewsContainer.appendChild(reviewElement);
+    });
+}
+
+// Display the reviews when the page loads
+window.addEventListener("load", displayReviews);
+// script.js
+
+// ... (previous code)
+
+// Function to initialize Slick Slider
+function initSlider() {
+    $("#reviews-container").slick({
+        dots: true, // Display navigation dots
+        infinite: true, // Loop the slider
+        slidesToShow: 1, // Number of slides to show at once
+        slidesToScroll: 1 // Number of slides to scroll
+    });
+}
+
+// Display the reviews and initialize the slider when the page loads
+window.addEventListener("load", function () {
+    displayReviews();
+    initSlider(); // Initialize the Slick Slider
+});

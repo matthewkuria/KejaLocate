@@ -124,9 +124,7 @@ li{
 .nav-link{
     transition: 0.7s ease;
 }
-.nav-link:hover{
-    color: ;
-}
+
 .hamburger{
     display: none;
     cursor: pointer;
@@ -213,6 +211,16 @@ input[type=submit]:hover{
 }
 .featured img:hover{
 	transform: scale(1.05);
+}
+#reviews-container{
+    width:80vw;
+    margin: 0 auto;
+    padding: 50px;
+    border: 1px solid black;
+    
+}
+.services{
+    margin-top: 50px;
 }
 .map{
     display: flex;
@@ -370,6 +378,7 @@ input[type=submit]:hover{
 	font-size: 28px;
 }
 .map iframe{
+    background-color: chartreuse;
     margin-left: 5vw;
     padding: 10px;
     width: 200px;

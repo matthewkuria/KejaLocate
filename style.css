@@ -237,7 +237,7 @@ input[type=submit]:hover{
     border-radius: 50%; /* Add rounded corners to the images */    
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
     top: 90%; /* Position the image 50% from the top of the review container */
-    left: 50%; /* Position the image 50% from the left of the review container */
+    left: 45%; /* Position the image 50% from the left of the review container */
     width: 120px;
     height: 120px;
 }
@@ -416,6 +416,16 @@ input[type=submit]:hover{
 	.container h3{
     color: white;
 	font-size: 28px;
+}
+.review img {  
+    position: absolute; /* Position the image absolutely within the review container */
+    max-width: 100%; /* Ensure the image doesn't exceed its container */
+    border-radius: 50%; /* Add rounded corners to the images */    
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    top: 90%; /* Position the image 50% from the top of the review container */
+    left: 32%; /* Position the image 50% from the left of the review container */
+    width: 120px;
+    height: 120px;
 }
 .map iframe{
     background-color: chartreuse;

@@ -273,19 +273,28 @@ const reviewsContainer = document.getElementById("reviews-container");
 // Sample review data (you can replace this with real data)
 const reviews = [
     {
-        name: "John Doe",
+        name: "Pegah Sharifi",
         rating: 4,
-        comment: "Great product! Highly recommended."
+        comment: "Great product! Highly recommended.",
+		image: "https://images.pexels.com/photos/14044365/pexels-photo-14044365.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     },
     {
-        name: "Jane Smith",
+        name: "Ноями Noyami",
         rating: 5,
-        comment: "Excellent service and fast delivery."
+        comment: "Excellent service and fast delivery.",
+		image: "https://images.pexels.com/photos/14644792/pexels-photo-14644792.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
     },
     {
-        name: "Bob Johnson",
+        name: "Le perfectionniste",
         rating: 3,
-        comment: "Product quality could be better."
+        comment: "Product quality could be better.",
+		image: "https://images.pexels.com/photos/13342855/pexels-photo-13342855.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+	{
+        name: "Italo Melo",
+        rating: 3,
+        comment: "High quality housing services.",
+		image: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
     }
 ];
 
@@ -299,6 +308,7 @@ function displayReviews() {
             <h3>${review.name}</h3>
             <p>Rating: ${review.rating}/5</p>
             <p>${review.comment}</p>
+			<img src="${review.image}" alt="${review.name}">
         `;
         reviewsContainer.appendChild(reviewElement);
     });
@@ -316,7 +326,9 @@ function initSlider() {
         dots: true, // Display navigation dots
         infinite: true, // Loop the slider
         slidesToShow: 1, // Number of slides to show at once
-        slidesToScroll: 1 // Number of slides to scroll
+        slidesToScroll: 1, // Number of slides to scroll
+		prevArrow: $(".prev-btn"), // Previous button selector
+        nextArrow: $(".next-btn") // Next button selector
     });
 }
 

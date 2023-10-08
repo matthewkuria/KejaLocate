@@ -214,9 +214,7 @@ input[type=submit]:hover{
 }
 #reviews-container{
     display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+    position: relative;   
     width:80vw;
     margin: 0 auto;
     padding: 20px;
@@ -224,8 +222,14 @@ input[type=submit]:hover{
 
     
 }
+.review{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text content */
+}
 /* Style the images within the reviews */
-.review img {
+.review img {  
     max-width: 100%; /* Ensure the image doesn't exceed its container */
     border-radius: 50%; /* Add rounded corners to the images */    
     margin-bottom: 10px; /* Add some spacing between images and other review content */

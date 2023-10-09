@@ -242,6 +242,19 @@ input[type=submit]:hover{
     height: 120px;
 }
 
+/* Style the heart icon */
+.heart-icon {
+    width: 24px; /* Set the width and height as needed */
+    height: 24px;
+    fill: currentColor; /* Use the current text color for the heart's color */
+    cursor: pointer;
+}
+
+/* Style the heart icon when it's "liked" */
+.heart-icon.liked {
+    fill: #f1400a !important; /* Change the fill color when "liked" */
+}
+
 .services{
     margin-top: 50px;
 }

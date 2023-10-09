@@ -255,6 +255,25 @@ input[type=submit]:hover{
     fill: #f1400a !important; /* Change the fill color when "liked" */
 }
 
+/* Style the "Favorite" button */
+.like-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style the favorites container and list */
+#favorites-container {
+    margin-top: 20px;
+}
+
+#favorites-list {
+    list-style: none;
+    padding: 0;
+}
+
 .services{
     margin-top: 50px;
 }

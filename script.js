@@ -218,7 +218,7 @@ function displayHouseItems(houseMenuItems){
 			  <img src=${item.img} class="photo" alt="rentals KejaLocate" width="250px" height="270px">
 				</a>
 				<!--Like/Hearty Icon-->
-				<svg  class="heart-icon" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" onclick="addToFavorites(this)"><style>svg{fill:#9e9a9a !important}</style><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
+				<svg  class="heart-icon" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 512 512" onclick="toggleFavorite(this)"><style>svg{fill:#9e9a9a !important}</style><path d="M47.6 300.4L228.3 469.1c7.5 7 17.4 10.9 27.7 10.9s20.2-3.9 27.7-10.9L464.4 300.4c30.4-28.3 47.6-68 47.6-109.5v-5.8c0-69.9-50.5-129.5-119.4-141C347 36.5 300.6 51.4 268 84L256 96 244 84c-32.6-32.6-79-47.5-124.6-39.9C50.5 55.6 0 115.2 0 185.1v5.8c0 41.5 17.2 81.2 47.6 109.5z"/></svg>
 			  <div class="card-body">
 				<h5 class="price">Ksh ${item.price} pm <span class="categoType"> &#9679;For Rent</span></h5>
 	  <!--Bedrooms Icon-->
@@ -235,21 +235,30 @@ function displayHouseItems(houseMenuItems){
 	displayMenu = displayMenu.join("");
 	featured.innerHTML = displayMenu;
 }
-// Initialize an array to store favorite houses
-const favoriteHouses = [];
 
-// Function to add a house to favorites
-function addToFavorites(heartIcon) {
+
+// Initialize an array to store favorite items
+const favoriteItems = [];
+
+// Function to toggle favorite and add/remove items accordingly
+function toggleFavorite(heartIcon) {
 	heartIcon.classList.toggle("liked");
     const reviewContainer = heartIcon.closest('.card');
     const reviewText = reviewContainer.querySelector('h5').textContent;
 
-    if (!favoriteHouses.includes(reviewText)) {
-        favoriteHouses.push(reviewText);
-
-        // Update the favorites list
-        updateFavoritesList();
+    if (!favoriteItems.includes(reviewText)) {
+        // Add to favorites
+        favoriteItems.push(reviewText);
+    } else {
+        // Remove from favorites
+        const index = favoriteItems.indexOf(reviewText);
+        if (index !== -1) {
+            favoriteItems.splice(index, 1);
+        }
     }
+
+    // Update the favorites list
+    updateFavoritesList();
 }
 
 // Function to update the favorites list
@@ -257,9 +266,19 @@ function updateFavoritesList() {
     const favoritesList = document.getElementById('favorites-list');
     favoritesList.innerHTML = ''; // Clear existing favorites
 
-    favoriteHouses.forEach(favorite => {
+    favoriteItems.forEach(item => {
         const listItem = document.createElement('li');
-        listItem.textContent = favorite;
+        listItem.textContent = item;
+        
+        // Create a "Remove" button for each item
+        const removeButton = document.createElement('button');
+        removeButton.textContent = 'Remove';
+        removeButton.classList.add('remove-btn');
+        removeButton.onclick = function() {
+            removeFromFavorites(this);
+        };
+
+        listItem.appendChild(removeButton);
         favoritesList.appendChild(listItem);
     });
 }

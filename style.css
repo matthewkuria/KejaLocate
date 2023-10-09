@@ -264,10 +264,17 @@ input[type=submit]:hover{
     cursor: pointer;
 }
 
-/* Style the favorites container and list */
+/* Style the favorites container to float at the top */
 #favorites-container {
-    margin-top: 20px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 30vw;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1; /* Ensure it appears above other content */
 }
+
 
 #favorites-list {
     list-style: none;

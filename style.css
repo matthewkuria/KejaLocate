@@ -463,6 +463,13 @@ input[type=submit]:hover{
     color: white;
 	font-size: 28px;
 }
+#favorites-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding:0;
+
+}
 .review img {  
     position: absolute; /* Position the image absolutely within the review container */
     max-width: 100%; /* Ensure the image doesn't exceed its container */
@@ -484,9 +491,6 @@ input[type=submit]:hover{
 	display: flex;
 	flex-direction: column;
    align-items: center;
-	
-	
-
 	
 }
 }

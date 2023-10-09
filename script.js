@@ -306,7 +306,7 @@ function displayReviews() {
         reviewElement.classList.add("review");
         reviewElement.innerHTML = `
             <h3>${review.name}</h3>
-            <p>Rating: ${review.rating}/5</p>
+            <p class="rating">Rating: <span class="stars">${getStars(review.rating)}</span></p>
             <p>${review.comment}</p>
 			<img src="${review.image}" alt="${review.name}">
         `;
@@ -316,9 +316,23 @@ function displayReviews() {
 
 // Display the reviews when the page loads
 window.addEventListener("load", displayReviews);
-// script.js
+// Function to generate star symbols based on the rating
+function getStars(rating) {
+    const maxStars = 5; // Maximum number of stars
+    const filledStars = Math.round(rating); // Number of filled stars
+    const emptyStars = maxStars - filledStars; // Number of empty stars
+    let stars = '';
 
-// ... (previous code)
+    for (let i = 0; i < filledStars; i++) {
+        stars += '&#9733;'; // Filled star symbol
+    }
+
+    for (let i = 0; i < emptyStars; i++) {
+        stars += '&#9734;'; // Empty star symbol
+    }
+
+    return stars;
+}
 
 // Function to initialize Slick Slider
 function initSlider() {

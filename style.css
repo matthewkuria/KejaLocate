@@ -256,9 +256,9 @@ input[type=submit]:hover{
 }
 
 /* Style the "Favorite" button */
-.like-btn {
-    background-color: #007bff;
-    color: #fff;
+.remove-btn {
+    background-color: #ff0000;
+    color: rgb(255, 254, 254);
     padding: 5px 10px;
     border: none;
     cursor: pointer;

@@ -272,7 +272,7 @@ function updateFavoritesList() {
         
         // Create a "Remove" button for each item
         const removeButton = document.createElement('button');
-        removeButton.textContent = 'Remove';
+        removeButton.textContent = 'X';
         removeButton.classList.add('remove-btn');
         removeButton.onclick = function() {
             removeFromFavorites(this);

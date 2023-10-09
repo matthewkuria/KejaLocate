@@ -322,11 +322,13 @@ input[type=submit]:hover{
 	align-items: baseline;
 	align-content: center;
 	position: relative;
+    bottom: 0;
 	margin-top: 4vh;
 	padding: 3em;
 	background-color: green;
 	height: auto;
 	color: white;
+    z-index: 90;
 	
 }
 .footer a{
@@ -401,6 +403,7 @@ input[type=submit]:hover{
     }
 	.hero{
 		height: 90vh;
+        z-index: 99;
 		 
 	}
 	.hero p{
@@ -486,6 +489,7 @@ input[type=submit]:hover{
     padding: 10px;
     width: 200px;
     height:180px;
+    z-index: 90;
 }
 	.footer{
 	display: flex;

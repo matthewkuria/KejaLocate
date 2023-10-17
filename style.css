@@ -289,7 +289,11 @@ input[type=submit]:hover{
     padding: 5%;
 }
 .services{
+    display: flex;
+    flex-direction: column;
     margin-top: 50px;
+    align-items: center;
+
 }
 /* styles.css */
 .slider-btn {
@@ -309,10 +313,16 @@ input[type=submit]:hover{
 }
 .carousel{
     max-height: fit-content;
+    width: 50vw !important;
+}
+.carousel-item {
+    width: 50vw !important;
+    height: 90vh;
+    margin: 0 auto;
 }
 .d-block{
-    height: 70vh;
-    width: 50vw;
+    max-height: 70vh ;
+    width: auto;
 }
 .map{
     display: flex;

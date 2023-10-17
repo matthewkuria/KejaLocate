@@ -307,7 +307,13 @@ input[type=submit]:hover{
 .next-btn {
     float: right;
 }
-
+.carousel{
+    max-height: fit-content;
+}
+.d-block{
+    height: 70vh;
+    width: 50vw;
+}
 .map{
     display: flex;
     flex-direction: row;
